@@ -5,11 +5,7 @@ class Walk {
     let eastCount = array.filter(e => e === 'e').length
     let westCount = array.filter(w => w === 'w').length
 
-    if (array.length < 10 || southCount !== northCount || eastCount !== westCount) {
-      return false
-    } else {
-      return true
-    }
+    return array.length < 10 || southCount !== northCount || eastCount !== westCount ? false : true;
 
   }
 };
