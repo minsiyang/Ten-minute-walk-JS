@@ -16,4 +16,8 @@ describe("Walk", function () {
   it("should return false when array length is 10, but 'w' numbers is not equal to 'e' numbers", function () {
     expect(walk.isTenMinuteWalk(['w', 's', 'e', 'n', 'n', 'e', 's', 'w', 'w', 'w'])).toBeFalse();
   })
+
+  it("should return true when array length is 10, but 'w' numnber is equal to 'e' numbers", function () {
+    expect(walk.isTenMinuteWalk(['w', 's', 'e', 'e', 'n', 'n', 'e', 's', 'w', 'w'])).toBeTruthy();
+  })
 });
