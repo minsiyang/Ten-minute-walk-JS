@@ -21,3 +21,4 @@ ten_minute_walk?(['w', 's']) # => false
 |  :--:    |  :--:    |
 | walk.isTenMinuteWalk(['w', 's']) |  false  | 
 | walk.isTenMinuteWalk(['w', 's', 'e', 's', 's', 'e', 's', 'w', 'n', 'n']) | false |
+| walk.isTenMinuteWalk(['w', 's', 'e', 'n', 'n', 'e', 's', 'w', 'w', 'w']) | false |

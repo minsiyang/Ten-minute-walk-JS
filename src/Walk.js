@@ -1,11 +1,13 @@
 class Walk {
   isTenMinuteWalk(array) {
-    let southCount = array.filter(x => x === 's').length
-    let northCount = array.filter(y => y === 'n').length
+    let southCount = array.filter(s => s === 's').length
+    let northCount = array.filter(n => n === 'n').length
+    let eastCount = array.filter(e => e === 'e').length
+    let westCount = array.filter(w => w === 'w').length
 
     if (array.length < 10) {
       return false
-    } else if (southCount !== northCount) {
+    } else if (southCount !== northCount || eastCount !== westCount) {
       return false
     }
 
